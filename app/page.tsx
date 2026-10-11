@@ -162,6 +162,12 @@ export default async function Leaderboard({
     <main className="min-h-screen bg-bg text-text">
       <div className="mx-auto max-w-5xl px-4 py-10">
         <h1 className="text-3xl font-extrabold tracking-tight">Player Leaderboard</h1>
+        <Link
+            href="/six"
+            className="mt-2 inline-block rounded-full bg-gold px-4 py-1.5 text-sm font-semibold text-bg hover:bg-gold/90"
+>
+            Pick your six →
+         </Link>
         <p className="mt-1 text-sm text-text-dim">
           Top 50 by {stat.label.toLowerCase()}
           {stat.kind !== "count" &&
